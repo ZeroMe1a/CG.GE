@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CFPmQ7oaPcRUezPLctb4ZLizKTT/Xgl+Di3rEqHDb6PEIiAPbeLtJYUv15qB2aNi3Yxwv+OXm26NFP4QTKOWkg==",
+  "dgSpecHash": "bklqB5Mhfkt3IKakAUbcF77suT86WMNus9DgqWZLbEWM59yD6qI5jREUbGrzpzZLk8/Hi3CiBBOSfhpcKMKxuA==",
   "success": true,
   "projectFilePath": "C:\\Users\\nuvem\\OneDrive\\Programming\\C#\\CG.GE\\CG.GE\\CG.GE.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\nuvem\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+    "C:\\Users\\nuvem\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
   "logs": []
 }

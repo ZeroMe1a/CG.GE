@@ -3,7 +3,6 @@ C:\Users\nuvem\OneDrive\Programming\C#\CG.GE\CG.GE\bin\Debug\net5.0-windows\CG.G
 C:\Users\nuvem\OneDrive\Programming\C#\CG.GE\CG.GE\bin\Debug\net5.0-windows\CG.GE.runtimeconfig.json
 C:\Users\nuvem\OneDrive\Programming\C#\CG.GE\CG.GE\bin\Debug\net5.0-windows\CG.GE.runtimeconfig.dev.json
 C:\Users\nuvem\OneDrive\Programming\C#\CG.GE\CG.GE\bin\Debug\net5.0-windows\CG.GE.dll
-C:\Users\nuvem\OneDrive\Programming\C#\CG.GE\CG.GE\bin\Debug\net5.0-windows\ref\CG.GE.dll
 C:\Users\nuvem\OneDrive\Programming\C#\CG.GE\CG.GE\bin\Debug\net5.0-windows\CG.GE.pdb
 C:\Users\nuvem\OneDrive\Programming\C#\CG.GE\CG.GE\obj\Debug\net5.0-windows\CG.GE.csproj.AssemblyReference.cache
 C:\Users\nuvem\OneDrive\Programming\C#\CG.GE\CG.GE\obj\Debug\net5.0-windows\CG.GE.Properties.Resources.resources
@@ -18,3 +17,4 @@ C:\Users\nuvem\OneDrive\Programming\C#\CG.GE\CG.GE\obj\Debug\net5.0-windows\CG.G
 C:\Users\nuvem\OneDrive\Programming\C#\CG.GE\CG.GE\obj\Debug\net5.0-windows\CG.GE.genruntimeconfig.cache
 C:\Users\nuvem\OneDrive\Programming\C#\CG.GE\CG.GE\obj\Debug\net5.0-windows\CG.GE.FormCasa.resources
 C:\Users\nuvem\OneDrive\Programming\C#\CG.GE\CG.GE\obj\Debug\net5.0-windows\CG.GE.configForm.resources
+C:\Users\nuvem\OneDrive\Programming\C#\cg.ge\CG.GE\obj\Debug\net5.0-windows\refint\CG.GE.dll

@@ -38,7 +38,6 @@ namespace CG.GE
 
         // https://www.ovoenergy.com/guides/energy-guides/what-is-a-kwh-kw-and-kwh-explained
 
-   B     // dictionaries 
 
         Dictionary<string, eletron> eletros = new Dictionary<string, eletron>();
         public Dictionary<string, float> flagsValues = new Dictionary<string, float>();
