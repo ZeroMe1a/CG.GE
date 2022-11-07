@@ -7,8 +7,7 @@
     },
     "additionalProbingPaths": [
       "C:\\Users\\nuvem\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\nuvem\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
+      "C:\\Users\\nuvem\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

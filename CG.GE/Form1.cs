@@ -26,12 +26,12 @@ namespace CG.GE
         }
 
         // calc values
-        const float tkWh = 0.80191f;
+        const float fpu = 1.028690f;
         public float flagSum { get; set; }
         public int interval { get; set; }
 
+        float kwh = 0;
         float total = 0;
-        int totalT = 0;
 
         // uma lâmpada LED de 3W demora ~333 HORAS pra gastar 1 kW
         // uma TV LED 4K de 60" demora ~5 horas pra gastar 1 kW (https://www.fastshop.com.br/wcsstore/FastShopCAS/manuais/VD/Samsung/SGUN55KU6500.pdf)
@@ -95,10 +95,10 @@ namespace CG.GE
             else
             {
                 total = 0;
-                totalT = 0;
+                kwh = 0;
 
                 fatura.Text = "R$" + 0.ToString("F2");
-                tempo.Text = "Timer: 0 Horas";
+                kwLabel.Text = 0.ToString("F1") + " KWh";
 
                 dataTimer.Interval = 1000/interval;
                 
@@ -119,15 +119,17 @@ namespace CG.GE
 
         private void dataTimer_Tick(object sender, EventArgs e)
         {
-            totalT += 1;
 
             foreach (KeyValuePair<string, eletron> x in eletros)
             {
-                if (x.Value.state) { total += (x.Value.volt / 1000f * tkWh) + flagSum; }
+                if (x.Value.state) { 
+                    total += (x.Value.volt * fpu / 1000f) + flagSum;
+                    kwh += x.Value.volt / 1000f;
+                }
             } 
 
-            fatura.Text = $"R${total.ToString("F2")}";
-            tempo.Text = $"Timer: {totalT} horas";
+            fatura.Text = "R$" + total.ToString("F2");
+            kwLabel.Text = kwh.ToString("F1") + " KWh";
         }
 
         private void btConfig_Click(object sender, EventArgs e)

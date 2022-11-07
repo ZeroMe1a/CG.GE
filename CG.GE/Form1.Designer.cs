@@ -49,7 +49,7 @@ namespace CG.GE
             this.luzCozi = new System.Windows.Forms.PictureBox();
             this.picPhone = new System.Windows.Forms.PictureBox();
             this.btConfig = new System.Windows.Forms.Button();
-            this.tempo = new System.Windows.Forms.Label();
+            this.kwLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tvSala)).BeginInit();
             this.tabAmbientes.SuspendLayout();
             this.tabSala.SuspendLayout();
@@ -64,9 +64,10 @@ namespace CG.GE
             // tvSala
             // 
             this.tvSala.BackColor = System.Drawing.Color.Transparent;
-            this.tvSala.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tvSala.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tvSala.Image = ((System.Drawing.Image)(resources.GetObject("tvSala.Image")));
             this.tvSala.Location = new System.Drawing.Point(205, 22);
+            this.tvSala.Margin = new System.Windows.Forms.Padding(20);
             this.tvSala.Name = "tvSala";
             this.tvSala.Size = new System.Drawing.Size(343, 208);
             this.tvSala.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -117,7 +118,7 @@ namespace CG.GE
             // 
             // simuStart
             // 
-            this.simuStart.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.simuStart.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.simuStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.simuStart.Font = new System.Drawing.Font("Segoe MDL2 Assets", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.simuStart.Location = new System.Drawing.Point(815, 325);
@@ -141,8 +142,10 @@ namespace CG.GE
             // 
             // tabSala
             // 
+            this.tabSala.BackColor = System.Drawing.Color.Transparent;
             this.tabSala.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabSala.BackgroundImage")));
             this.tabSala.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabSala.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabSala.Controls.Add(this.luzSala);
             this.tabSala.Controls.Add(this.salaTvSwitch);
             this.tabSala.Controls.Add(this.tvSala);
@@ -153,7 +156,6 @@ namespace CG.GE
             this.tabSala.Size = new System.Drawing.Size(752, 474);
             this.tabSala.TabIndex = 0;
             this.tabSala.Text = "Sala";
-            this.tabSala.UseVisualStyleBackColor = true;
             // 
             // luzSala
             // 
@@ -278,24 +280,24 @@ namespace CG.GE
             this.btConfig.UseVisualStyleBackColor = true;
             this.btConfig.Click += new System.EventHandler(this.btConfig_Click);
             // 
-            // tempo
+            // kwLabel
             // 
-            this.tempo.BackColor = System.Drawing.Color.White;
-            this.tempo.Font = new System.Drawing.Font("Bebas Neue", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tempo.Location = new System.Drawing.Point(815, 258);
-            this.tempo.Name = "tempo";
-            this.tempo.Size = new System.Drawing.Size(146, 33);
-            this.tempo.TabIndex = 6;
-            this.tempo.Text = "Timer: 0 Horas";
-            this.tempo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.kwLabel.BackColor = System.Drawing.Color.White;
+            this.kwLabel.Font = new System.Drawing.Font("Bebas Neue", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.kwLabel.Location = new System.Drawing.Point(799, 258);
+            this.kwLabel.Name = "kwLabel";
+            this.kwLabel.Size = new System.Drawing.Size(179, 34);
+            this.kwLabel.TabIndex = 12;
+            this.kwLabel.Text = "KW/h";
+            this.kwLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormCasa
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1013, 507);
-            this.Controls.Add(this.tempo);
+            this.Controls.Add(this.kwLabel);
             this.Controls.Add(this.btConfig);
             this.Controls.Add(this.simuStart);
             this.Controls.Add(this.fatura);
@@ -338,7 +340,7 @@ namespace CG.GE
         private System.Windows.Forms.PictureBox coziFogo;
         private System.Windows.Forms.PictureBox coziGelo;
         private System.Windows.Forms.Button btConfig;
-        private System.Windows.Forms.Label tempo;
+        private System.Windows.Forms.Label kwLabel;
     }
 }
 

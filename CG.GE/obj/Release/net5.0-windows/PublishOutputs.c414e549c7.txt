@@ -1,0 +1,5 @@
+C:\Users\nuvem\OneDrive\Programming\C#\CG.GE\CG.GE\bin\Release\net5.0-windows\publish\CG.GE.exe
+C:\Users\nuvem\OneDrive\Programming\C#\CG.GE\CG.GE\bin\Release\net5.0-windows\publish\CG.GE.dll
+C:\Users\nuvem\OneDrive\Programming\C#\CG.GE\CG.GE\bin\Release\net5.0-windows\publish\CG.GE.deps.json
+C:\Users\nuvem\OneDrive\Programming\C#\CG.GE\CG.GE\bin\Release\net5.0-windows\publish\CG.GE.runtimeconfig.json
+C:\Users\nuvem\OneDrive\Programming\C#\CG.GE\CG.GE\bin\Release\net5.0-windows\publish\CG.GE.pdb
