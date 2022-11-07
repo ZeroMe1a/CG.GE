@@ -50,6 +50,7 @@ namespace CG.GE
             this.picPhone = new System.Windows.Forms.PictureBox();
             this.btConfig = new System.Windows.Forms.Button();
             this.kwLabel = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tvSala)).BeginInit();
             this.tabAmbientes.SuspendLayout();
             this.tabSala.SuspendLayout();
@@ -291,12 +292,22 @@ namespace CG.GE
             this.kwLabel.Text = "KW/h";
             this.kwLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(823, 439);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(129, 23);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // FormCasa
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LightGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1013, 507);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.kwLabel);
             this.Controls.Add(this.btConfig);
             this.Controls.Add(this.simuStart);
@@ -341,6 +352,7 @@ namespace CG.GE
         private System.Windows.Forms.PictureBox coziGelo;
         private System.Windows.Forms.Button btConfig;
         private System.Windows.Forms.Label kwLabel;
+        private System.Windows.Forms.Button button1;
     }
 }
 
