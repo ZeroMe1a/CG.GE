@@ -67,10 +67,10 @@ namespace CG.GE
             this.tvSala.BackColor = System.Drawing.Color.Transparent;
             this.tvSala.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tvSala.Image = ((System.Drawing.Image)(resources.GetObject("tvSala.Image")));
-            this.tvSala.Location = new System.Drawing.Point(205, 22);
+            this.tvSala.Location = new System.Drawing.Point(301, 34);
             this.tvSala.Margin = new System.Windows.Forms.Padding(20);
             this.tvSala.Name = "tvSala";
-            this.tvSala.Size = new System.Drawing.Size(343, 208);
+            this.tvSala.Size = new System.Drawing.Size(497, 293);
             this.tvSala.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tvSala.TabIndex = 4;
             this.tvSala.TabStop = false;
@@ -80,7 +80,7 @@ namespace CG.GE
             // 
             this.salaLuzSwitch.BackColor = System.Drawing.Color.Red;
             this.salaLuzSwitch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.salaLuzSwitch.Location = new System.Drawing.Point(6, 438);
+            this.salaLuzSwitch.Location = new System.Drawing.Point(22, 632);
             this.salaLuzSwitch.Name = "salaLuzSwitch";
             this.salaLuzSwitch.Size = new System.Drawing.Size(125, 30);
             this.salaLuzSwitch.TabIndex = 8;
@@ -92,7 +92,7 @@ namespace CG.GE
             // 
             this.salaTvSwitch.BackColor = System.Drawing.Color.Red;
             this.salaTvSwitch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.salaTvSwitch.Location = new System.Drawing.Point(137, 438);
+            this.salaTvSwitch.Location = new System.Drawing.Point(181, 632);
             this.salaTvSwitch.Name = "salaTvSwitch";
             this.salaTvSwitch.Size = new System.Drawing.Size(125, 30);
             this.salaTvSwitch.TabIndex = 8;
@@ -105,7 +105,7 @@ namespace CG.GE
             this.fatura.BackColor = System.Drawing.Color.White;
             this.fatura.Font = new System.Drawing.Font("Bebas Neue", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.fatura.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.fatura.Location = new System.Drawing.Point(799, 202);
+            this.fatura.Location = new System.Drawing.Point(1141, 429);
             this.fatura.MaximumSize = new System.Drawing.Size(250, 120);
             this.fatura.Name = "fatura";
             this.fatura.Size = new System.Drawing.Size(179, 56);
@@ -122,7 +122,7 @@ namespace CG.GE
             this.simuStart.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.simuStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.simuStart.Font = new System.Drawing.Font("Segoe MDL2 Assets", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.simuStart.Location = new System.Drawing.Point(815, 325);
+            this.simuStart.Location = new System.Drawing.Point(1157, 552);
             this.simuStart.Name = "simuStart";
             this.simuStart.Size = new System.Drawing.Size(146, 54);
             this.simuStart.TabIndex = 7;
@@ -138,7 +138,7 @@ namespace CG.GE
             this.tabAmbientes.Location = new System.Drawing.Point(5, 4);
             this.tabAmbientes.Name = "tabAmbientes";
             this.tabAmbientes.SelectedIndex = 0;
-            this.tabAmbientes.Size = new System.Drawing.Size(760, 502);
+            this.tabAmbientes.Size = new System.Drawing.Size(1106, 713);
             this.tabAmbientes.TabIndex = 8;
             // 
             // tabSala
@@ -154,7 +154,7 @@ namespace CG.GE
             this.tabSala.Location = new System.Drawing.Point(4, 24);
             this.tabSala.Name = "tabSala";
             this.tabSala.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSala.Size = new System.Drawing.Size(752, 474);
+            this.tabSala.Size = new System.Drawing.Size(1098, 685);
             this.tabSala.TabIndex = 0;
             this.tabSala.Text = "Sala";
             // 
@@ -163,7 +163,7 @@ namespace CG.GE
             this.luzSala.BackColor = System.Drawing.Color.Transparent;
             this.luzSala.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.luzSala.Image = ((System.Drawing.Image)(resources.GetObject("luzSala.Image")));
-            this.luzSala.Location = new System.Drawing.Point(-4, 0);
+            this.luzSala.Location = new System.Drawing.Point(22, 22);
             this.luzSala.Name = "luzSala";
             this.luzSala.Size = new System.Drawing.Size(150, 125);
             this.luzSala.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -184,7 +184,7 @@ namespace CG.GE
             this.tabCozinha.Location = new System.Drawing.Point(4, 24);
             this.tabCozinha.Name = "tabCozinha";
             this.tabCozinha.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCozinha.Size = new System.Drawing.Size(752, 474);
+            this.tabCozinha.Size = new System.Drawing.Size(1098, 685);
             this.tabCozinha.TabIndex = 1;
             this.tabCozinha.Text = "Cozinha";
             this.tabCozinha.UseVisualStyleBackColor = true;
@@ -192,7 +192,7 @@ namespace CG.GE
             // coziGelo
             // 
             this.coziGelo.Image = ((System.Drawing.Image)(resources.GetObject("coziGelo.Image")));
-            this.coziGelo.Location = new System.Drawing.Point(605, 105);
+            this.coziGelo.Location = new System.Drawing.Point(901, 158);
             this.coziGelo.Name = "coziGelo";
             this.coziGelo.Size = new System.Drawing.Size(141, 38);
             this.coziGelo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -203,7 +203,7 @@ namespace CG.GE
             // coziFogo
             // 
             this.coziFogo.Image = ((System.Drawing.Image)(resources.GetObject("coziFogo.Image")));
-            this.coziFogo.Location = new System.Drawing.Point(321, 260);
+            this.coziFogo.Location = new System.Drawing.Point(511, 401);
             this.coziFogo.Name = "coziFogo";
             this.coziFogo.Size = new System.Drawing.Size(203, 145);
             this.coziFogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -215,7 +215,7 @@ namespace CG.GE
             // 
             this.coziGeloSwitch.BackColor = System.Drawing.Color.Red;
             this.coziGeloSwitch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.coziGeloSwitch.Location = new System.Drawing.Point(268, 438);
+            this.coziGeloSwitch.Location = new System.Drawing.Point(285, 636);
             this.coziGeloSwitch.Name = "coziGeloSwitch";
             this.coziGeloSwitch.Size = new System.Drawing.Size(125, 30);
             this.coziGeloSwitch.TabIndex = 11;
@@ -227,7 +227,7 @@ namespace CG.GE
             // 
             this.coziFogoSwitch.BackColor = System.Drawing.Color.Red;
             this.coziFogoSwitch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.coziFogoSwitch.Location = new System.Drawing.Point(137, 438);
+            this.coziFogoSwitch.Location = new System.Drawing.Point(145, 636);
             this.coziFogoSwitch.Name = "coziFogoSwitch";
             this.coziFogoSwitch.Size = new System.Drawing.Size(125, 30);
             this.coziFogoSwitch.TabIndex = 10;
@@ -239,7 +239,7 @@ namespace CG.GE
             // 
             this.coziLuzSwitch.BackColor = System.Drawing.Color.Red;
             this.coziLuzSwitch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.coziLuzSwitch.Location = new System.Drawing.Point(6, 438);
+            this.coziLuzSwitch.Location = new System.Drawing.Point(6, 635);
             this.coziLuzSwitch.Name = "coziLuzSwitch";
             this.coziLuzSwitch.Size = new System.Drawing.Size(125, 30);
             this.coziLuzSwitch.TabIndex = 9;
@@ -251,7 +251,7 @@ namespace CG.GE
             // 
             this.luzCozi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.luzCozi.Image = ((System.Drawing.Image)(resources.GetObject("luzCozi.Image")));
-            this.luzCozi.Location = new System.Drawing.Point(265, -44);
+            this.luzCozi.Location = new System.Drawing.Point(425, -33);
             this.luzCozi.Name = "luzCozi";
             this.luzCozi.Size = new System.Drawing.Size(161, 154);
             this.luzCozi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -264,16 +264,16 @@ namespace CG.GE
             this.picPhone.BackColor = System.Drawing.Color.Transparent;
             this.picPhone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.picPhone.Image = ((System.Drawing.Image)(resources.GetObject("picPhone.Image")));
-            this.picPhone.Location = new System.Drawing.Point(769, 24);
+            this.picPhone.Location = new System.Drawing.Point(1117, 227);
             this.picPhone.Name = "picPhone";
-            this.picPhone.Size = new System.Drawing.Size(238, 482);
+            this.picPhone.Size = new System.Drawing.Size(238, 507);
             this.picPhone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPhone.TabIndex = 9;
             this.picPhone.TabStop = false;
             // 
             // btConfig
             // 
-            this.btConfig.Location = new System.Drawing.Point(823, 385);
+            this.btConfig.Location = new System.Drawing.Point(1165, 612);
             this.btConfig.Name = "btConfig";
             this.btConfig.Size = new System.Drawing.Size(129, 23);
             this.btConfig.TabIndex = 11;
@@ -285,7 +285,7 @@ namespace CG.GE
             // 
             this.kwLabel.BackColor = System.Drawing.Color.White;
             this.kwLabel.Font = new System.Drawing.Font("Bebas Neue", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.kwLabel.Location = new System.Drawing.Point(799, 258);
+            this.kwLabel.Location = new System.Drawing.Point(1141, 485);
             this.kwLabel.Name = "kwLabel";
             this.kwLabel.Size = new System.Drawing.Size(179, 34);
             this.kwLabel.TabIndex = 12;
@@ -294,7 +294,7 @@ namespace CG.GE
             // 
             // advView
             // 
-            this.advView.Location = new System.Drawing.Point(819, 438);
+            this.advView.Location = new System.Drawing.Point(1161, 665);
             this.advView.Name = "advView";
             this.advView.Size = new System.Drawing.Size(138, 23);
             this.advView.TabIndex = 13;
@@ -307,7 +307,7 @@ namespace CG.GE
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LightGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1013, 507);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.advView);
             this.Controls.Add(this.kwLabel);
             this.Controls.Add(this.btConfig);
@@ -316,7 +316,6 @@ namespace CG.GE
             this.Controls.Add(this.tabAmbientes);
             this.Controls.Add(this.picPhone);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormCasa";
             this.Text = "Calculadora Gráfica de Gastos Elétricos";
