@@ -15,21 +15,30 @@ namespace CG.GE
         // eletronic struct
         struct eletron
         {
-            public bool state;
-            public int volt;
+            public bool state; // estado do aparelho
+            public int volt; // voltagem do aparelho
+            public int totaltime; // tempo total de execução do aparelho
 
-            public eletron(bool s, int v)
+            public eletron(bool s, int v, int tt)
             {
                 this.state = s;
                 this.volt = v;
+                this.totaltime = tt;
             }
         }
 
         // calc values
+
+        // Fatura por Unidade (Taxas e impostos incluídos)
         const float fpu = 1.028690f;
+
+        // Bandeira atual
         public float flagSum { get; set; }
+
+        // Intervalo de tempo usado para a simulação
         public int interval { get; set; }
 
+        int tempo;
         float kwh = 0;
         float total = 0;
 
@@ -44,35 +53,44 @@ namespace CG.GE
 
         public FormCasa()
         {
-            flagSum = 0;
-
-            // populating eletronic dictionary
-            eletros.Add("luzSala",      new eletron(false, 3));
-            eletros.Add("tvSala",       new eletron(false, 140));
-            eletros.Add("coziFogo",    new eletron(false, 25));
-            eletros.Add("coziGelo",    new eletron(false, 500));
-            eletros.Add("luzCozi",      new eletron(false, 3));
-
-            // populating flag dictionary
-            flagsValues.Add("Verde",               0);
-            flagsValues.Add("Amarela",            0.01874f);
-            flagsValues.Add("Vermelha - 1°",    0.03971f);
-            flagsValues.Add("Vermelha - 2°",    0.09492f);
-
-            interval = 1;
-
+            init();
             InitializeComponent();
         }
 
         //
         // SWITCHES
-        //
+        // Estas são as funções responsáveis por ligar/desligar dispositivos
+
+        private void init()
+        {
+            flagSum = 0;
+
+            // Preenchendo dicionário de dispositivos eletrônicos disponiveis
+            // eletros.Add("NOME PictureBox", new eletron(ESTADO, VOLTAGEM));
+ 
+
+            eletros.Add("luzSala", new eletron(false, 3, 0));
+            eletros.Add("tvSala", new eletron(false, 140, 0));
+            eletros.Add("coziFogo", new eletron(false, 25, 0));
+            eletros.Add("coziGelo", new eletron(false, 500, 0));
+            eletros.Add("luzCozi", new eletron(false, 3, 0));
+
+            // Preenchendo dicionário de bandeiras e suas devidas faturas
+            // Bandeira -> Fatura
+            flagsValues.Add("Verde", 0);
+            flagsValues.Add("Amarela", 0.01874f);
+            flagsValues.Add("Vermelha - 1°", 0.03971f);
+            flagsValues.Add("Vermelha - 2°", 0.09492f);
+
+            interval = 1;
+        }
 
         private void switchState(Button switcher, PictureBox target)
         {
             switcher.BackColor = eletros[target.Name].state ? Color.Red : Color.Green;
             target.Visible = !eletros[target.Name].state;
-            eletros[target.Name] = new eletron(!eletros[target.Name].state, eletros[target.Name].volt);
+
+            eletros[target.Name] = new eletron(!eletros[target.Name].state, eletros[target.Name].volt, eletros[target.Name].totaltime);
         }
 
         private void luzSwitch_Click(object sender, EventArgs e) { switchState(salaLuzSwitch, luzSala); }
@@ -86,10 +104,10 @@ namespace CG.GE
         private void coziGeloSwitch_Click(object sender, EventArgs e) { switchState(coziGeloSwitch, coziGelo); }
 
         private void simuStart_Click(object sender, EventArgs e)
-        {
+        { 
             if (dataTimer.Enabled)
-            { 
-                dataTimer.Stop(); 
+            {  
+                dataTimer.Stop();
             } 
             
             else
@@ -116,15 +134,22 @@ namespace CG.GE
                 dataTimer.Start();
             }
         }
-
         private void dataTimer_Tick(object sender, EventArgs e)
         {
+            // dada a passagem de um intervalo, este bloco de código vai ser executado
+            tempo++;
 
+            // loop de cálculo para cada eletrônico
+            // caso o dispositivo esteja ligado:
+
+            // calcule (volt*fatura / 1000) + bandeira e some ao total da fatura
+            // calcule volt/1000 e some ao total de kWh gastos
             foreach (KeyValuePair<string, eletron> x in eletros)
             {
                 if (x.Value.state) { 
                     total += (x.Value.volt * fpu / 1000f) + flagSum;
                     kwh += x.Value.volt / 1000f;
+                    eletros[x.Key] = new eletron(x.Value.state, x.Value.volt, x.Value.totaltime+1);
                 }
             } 
 
@@ -139,6 +164,19 @@ namespace CG.GE
 
             flagSum = config.selectedFlag;
             interval = config.timeInterval;
+        }
+
+        private void advView_Click(object sender, EventArgs e)
+        {
+            string info = "";
+
+            // para cada eletrônico, calcule seu gasto total de kWh dado seu tempo ativo
+            foreach (KeyValuePair<string, eletron> x in eletros)
+            {
+                info += x.Key.ToString()+": "+(x.Value.volt/1000f * x.Value.totaltime).ToString("F2")+" kWh\n";
+            }
+
+            MessageBox.Show(info);
         }
     }
 }
